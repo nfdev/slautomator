@@ -26,14 +26,24 @@ class WebSite():
         """
         return False
 
-    def login(self, wd):
+    def download(self, wd):
         """
-        Login Procedule to Enter Site Group
-        """
-        return True
+        download and rename file
 
-    def logout(self, wd):
         """
-        Logout Procedule to Enter Site Group
-        """
-        return True
+        wd.implicitly_wait(120)
+        # click button
+        #wait
+        fname = ""
+        fdir = "" # get from wd. how?
+        fname_out = ""
+        fdir_out = "" # how to set ?
+
+        while waiting_time < download_timeout:
+            time.slppe()
+            waiting_time += sleep_unit
+            if os.path.exists(fname):
+               os.rename(fnae,fname_out)
+               return True
+        raise Exception("Download Failure!!")
+
